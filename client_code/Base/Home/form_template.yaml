@@ -1,0 +1,22 @@
+container: {type: ColumnPanel}
+components:
+- name: column_panel_1
+  properties: {}
+  type: ColumnPanel
+  layout_properties: {grid_position: 'EWAKDJ,MGSJNC'}
+  components:
+  - name: image_1
+    properties: {source: _/theme/download.jpg}
+    type: Image
+    layout_properties: {grid_position: 'AURUOX,DQEPSW'}
+  - name: rich_text_1
+    properties: {content: This is Aman's IT courses specially designed to upskill so that you can get a hike of 200 to 300%,
+      font_size: 18, align: center}
+    type: RichText
+    layout_properties: {grid_position: 'KGVJHS,QQYBOH'}
+    components:
+    - name: button_1
+      properties: {text: View Courses, role: filled-button, bold: true}
+      type: Button
+      event_bindings: {click: button_1_click}
+is_package: true

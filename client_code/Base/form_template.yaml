@@ -1,0 +1,30 @@
+is_package: true
+container:
+  type: HtmlTemplate
+  properties: {html: '@theme:standard-page.html', background: ''}
+components:
+- type: ColumnPanel
+  properties: {col_widths: '{}'}
+  name: content_panel
+  layout_properties: {slot: default}
+  components: []
+- type: FlowPanel
+  properties: {}
+  name: navbar_links
+  layout_properties: {slot: nav-right}
+  components:
+  - name: link_2
+    properties: {text: My Courses, icon: 'fa:book', background: 'theme:On Primary'}
+    type: Link
+    layout_properties: {}
+  - name: link_3
+    properties: {text: Sign in, icon: 'fa:sign-out'}
+    type: Link
+    layout_properties: {}
+- name: link_1
+  properties: {text: Aman Shop, italic: true, icon: 'fa:asterisk', role: headline,
+    foreground: 'theme:Primary Container', background: 'theme:On Tertiary Container'}
+  type: Link
+  layout_properties: {slot: title}
+  data_bindings: []
+  event_bindings: {click: link_1_click}
