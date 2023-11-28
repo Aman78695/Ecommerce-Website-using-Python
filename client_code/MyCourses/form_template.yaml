@@ -1,0 +1,7 @@
+container: {type: ColumnPanel}
+components:
+- name: label_1
+  properties: {text: MyCourses}
+  type: Label
+  layout_properties: {grid_position: 'BQKDII,ZCYPDW'}
+is_package: true
