@@ -16,7 +16,7 @@ class Base(BaseTemplate):
     self.content_panel.add_component(Home())
     self.change_sign_in_text()
 
-    # Any code you write here will run before the form opens.
+  # Any code you write here will run before the form opens.
   def change_sign_in_text(self):
     user=anvil.users.get_user()
     if user:
